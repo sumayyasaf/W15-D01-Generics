@@ -69,7 +69,7 @@ printList(numbers); // Output: 1 2 3
 ---
 
 ### Task 4: Real-World Application - Product Repository
-Create a generic class `ProductRepository<T>` to manage a collection of products.
+Create a generic class `Product<T>` to manage a collection of products.
 
 #### Steps:
 1. Add a private `List<T>` field to store products.
@@ -80,12 +80,19 @@ Create a generic class `ProductRepository<T>` to manage a collection of products
 3. Test the repository with a `Product` class containing fields like `id` and `name`.
 
 #### Example:
-```java
-ProductRepository<Product> repository = new ProductRepository<>();
-repository.addProduct(new Product(1, "Laptop"));
-repository.addProduct(new Product(2, "Phone"));
 
-System.out.println(repository.getAllProducts());
+```java
+Product<Product> repository = new Product<>();
+repository.
+
+addProduct(new Product(1, "Laptop"));
+        repository.
+
+addProduct(new Product(2, "Phone"));
+
+        System.out.
+
+println(repository.getAllProducts());
 // Output: [Product{id=1, name='Laptop'}, Product{id=2, name='Phone'}]
 ```
 
